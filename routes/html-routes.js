@@ -28,4 +28,10 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
+   // take member to calendar page
+   app.get("/calendar", isAuthenticated, function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/calendar.html"));
+  });
+
+
 };
