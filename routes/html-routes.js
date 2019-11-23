@@ -6,24 +6,25 @@ var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
 
-  app.get("/", function (req, res) {
-    // If the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
-    }
-    res.sendFile(path.join(__dirname, "../public/members.html"));
-  });
+  // app.get("/", function (req, res) {
+  //   // If the user already has an account send them to the members page
+  //   if (req.user) {
+  //     res.redirect("/members");
+  //   }
+  //   res.sendFile(path.join(__dirname, "../public/members.html"));
+  // });
 
   app.get("/login", function (req, res) {
-    // If the user already has an account send them to the members page
+    // If the user already has an account send them to the calendar page
     if (req.user) {
       res.redirect("/calendar");
+    } else {
+      res.sendFile(path.join(__dirname, "../public/login.html"));
     }
-    res.sendFile(path.join(__dirname, "../public/login.html"));
   });
 
   app.get("/signup", function (req, res) {
-    // If the user already has an account send them to the members page
+    // If the user already has an account send them to the caledar page
     if (req.user) {
       res.redirect("/calendar");
     }
@@ -32,9 +33,9 @@ module.exports = function (app) {
 
   // Here we've add our isAuthenticated middleware to this route.
   // If a user who is not logged in tries to access this route they will be redirected to the signup page
-  app.get("/secured", isAuthenticated, function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/members.html"));
-  });
+  // app.get("/secured", isAuthenticated, function (req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/members.html"));
+  // });
 
   // take member to calendar page
   app.get("/calendar", isAuthenticated, function (req, res) {
@@ -43,9 +44,9 @@ module.exports = function (app) {
 
   app.get("*", function (req, res) {
     // If the user already has an account send them to the members page
-    if (req.user) {
-      res.redirect("/members");
-    }
+    // if (req.user) {
+    //   res.redirect("/members");
+    // }
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
