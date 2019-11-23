@@ -46,4 +46,44 @@ module.exports = function(app) {
       });
     }
   });
+
+// get event data for logged in user
+app.get("/api/event_data", function(req, res) {
+  console.log('yyyyyyyyyyyyyyyyyyyyyyyyyyyy')
+  console.log(res.req.user.id);
+  var userId = 5;
+  db.calendar.findAll({
+    where: {
+      UserId: res.req.user.id
+    }
+    // include: [{
+    //   model: db.User,
+    //   required: true
+    // }]
+  }).then(function(results){
+    res.json(results);
+   
+  });
+});
+
+// Add an event
+app.post("/api/new", function(req, res) {
+
+  console.log("Event Data:");
+  console.log(req.body);
+
+  db.calendar.create({
+    time: req.body.time,
+    date: req.body.date,
+    event: req.body.event,
+    UserId: req.body.UserId
+  }).then(function(results) {
+    res.end();
+  });
+
+});
+
+
+
+
 };
