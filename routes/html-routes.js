@@ -36,6 +36,11 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
 
+  // take member to calendar page
+  app.get("/calendar", isAuthenticated, function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/calendar.html"));
+  });
+
   app.get("*", function (req, res) {
     // If the user already has an account send them to the members page
     if (req.user) {
@@ -43,4 +48,8 @@ module.exports = function (app) {
     }
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
+
+
+
+
 };

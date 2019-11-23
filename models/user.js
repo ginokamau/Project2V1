@@ -27,5 +27,15 @@ module.exports = function(sequelize, DataTypes) {
   User.addHook("beforeCreate", function(user) {
     user.password = bcrypt.hashSync(user.password, bcrypt.genSaltSync(10), null);
   });
+
+     // one user can have many events
+     User.associate = function(models){
+      console.log(models);
+      console.log(models.calendar);
+      User.hasMany(models.calendar,{
+          onDelete: 'cascade'
+      });
+  };
+
   return User;
 };
