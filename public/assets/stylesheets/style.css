@@ -17,9 +17,7 @@ body {
   color: rgb(180, 178, 178);
 }
 
-a:hover {
-  background: yellow;
-}
+
 
 .jumbotron {
   background-image: url("../images/annie-spratt-W6RXSc8OWN0-unsplash.jpg");
