@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     // get stored events for a user
     $.get('/api/event_data').then(function(data){
         console.log('xxxxxxxxxxxxxxxxxxxxxxxxxx')
@@ -37,10 +38,11 @@ $(document).ready(function(){
                 time: $("#time").val().trim(),
                 date: $("#date").val().trim(),
                 event: $("#event").val().trim(),
-                UserId: userId
+                UserId: 5
+                // UserId: userId
                 //   created_at: moment().format("YYYY-MM-DD HH:mm:ss")
     };
-  
+    console.log('&&&&&&&&&&&&&&&&&')
     console.log(newEvent);
   
     // Send an AJAX POST-request with jQuery

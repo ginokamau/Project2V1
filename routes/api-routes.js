@@ -68,7 +68,7 @@ app.get("/api/event_data", function(req, res) {
 
 // Add an event
 app.post("/api/new", function(req, res) {
-
+ console.log('^^^^^^^^^^^^^^^^^^^^^^')
   console.log("Event Data:");
   console.log(req.body);
 
@@ -82,8 +82,4 @@ app.post("/api/new", function(req, res) {
   });
 
 });
-
-
-
-
 };
