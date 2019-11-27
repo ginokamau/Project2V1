@@ -76,7 +76,7 @@ app.post("/api/new", function(req, res) {
     time: req.body.time,
     date: req.body.date,
     event: req.body.event,
-    UserId: req.user.UserId
+    UserId: req.user.id
   }).then(function(results) {
     res.end();
   });

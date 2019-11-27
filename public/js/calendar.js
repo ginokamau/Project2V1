@@ -38,8 +38,8 @@ $(document).ready(function(){
                 time: $("#time").val().trim(),
                 date: $("#date").val().trim(),
                 event: $("#event").val().trim(),
-                // UserId: 5
-                UserId: userId
+                UserId: 5
+                // UserId: userId
                 //   created_at: moment().format("YYYY-MM-DD HH:mm:ss")
     };
     console.log('&&&&&&&&&&&&&&&&&')
