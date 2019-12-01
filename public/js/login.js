@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  // Getting references to our form and inputs
+  // get references to form and inputs
   var loginForm = $("form.login");
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
 
-  // When the form is submitted, we validate there's an email and password entered
+// get references to form and inputs
   loginForm.on("submit", function (event) {
     event.preventDefault();
     var userData = {
@@ -13,16 +13,19 @@ $(document).ready(function () {
     };
 
     if (!userData.email || !userData.password) {
+      alert('Must enter enter and password.')
       return;
     }
 
-    // If we have an email and password we run the loginUser function and clear the form
+    // if email and password in database, run the loginUser function
+    // and clear the form
     loginUser(userData.email, userData.password);
     emailInput.val("");
     passwordInput.val("");
   });
 
-  // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
+ // loginUser posts to "api/login" route and if successful,
+  // redirects us the the calenedar/journal page
   function loginUser(email, password) {
     $.post("/api/login", {
         email: email,
@@ -30,9 +33,10 @@ $(document).ready(function () {
       })
       .then(function () {
         window.location.replace("/calendar");
-        // If there's an error, log the error
+        // if error, log the error
       })
       .catch(function (err) {
+        alert('Invalid email/password combination.')
         console.log(err);
       });
   }
