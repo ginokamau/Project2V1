@@ -41,6 +41,7 @@ h2 {
 } */
 
 .leafbar {
+  text-align: center;
   line-height: 100px;
   color: white;
 }
