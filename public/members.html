@@ -53,20 +53,56 @@
         need. </h2>
     </section>
     <hr>
+<!-- ====================================================================================== -->
+   <!-- Gino and Maria APIs -->
+    <section>
     <div>gino and maria</div>
 
     <div class="row">
 
       <div class="col-sm-4">
         <h3>Find a medical service near you</h3>
-        <p>Search here for a doctor, dentist or drugstore near you.</p>
-        <div class="input-group input-group-lg">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-lg">search by zip code</span>
+        <p>Search <a href="#bannerformmodal" data-toggle="modal" data-target="#bannerformmodal">here</a> for a doctor,
+          dentist or drugstore near you.</p>
+
+        <div id="servicesModal">
+        <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal"
+          aria-hidden="true" id="bannerformmodal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+                  <h3 class="modal-title" id="myModalLabel">Find a Service</h3>
+                  <button type="button" class="close" id='closer1' data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <h5>What kind of specialist are you seeking? Make your selection below.</h5><br>
+                  <div id="serviceSpecialist">
+                      <button type="button" class="specialist btn btn-danger btn-block btn-lg" value="Doctor">Doctor</button><br>
+                      <button type="button" class="specialist btn btn-primary btn-block btn-lg" value="Dentist">Dentist</button><br>
+                      <button type="button" class="specialist btn btn-success btn-block btn-lg" value="Drugstore">Drugstore</button>
+                  </div><br>
+                  <div class="input-group input-group-lg">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="">                  
+                          <label for="zipCode"></label>
+                          <input type="text" name="zipCode" id="zip">    Search by Zip Code</span>
+                      </div>
+                      <!-- <input type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg"> -->
+                  </div>
+
+                </div>
+                <div class="modal-footer">                  
+
+                  <button type="button" class="btn btn-secondary btn-lg">Submit</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <input type="text" class="form-control" aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-lg">
         </div>
+      </div>
       </div>
 
       <div class="col-sm-4">
@@ -83,7 +119,7 @@
     </div>
 
      <!-- Trigger the modal with a button -->
-     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+     <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
 
      <!-- Modal -->
      <div id="myModal" class="modal fade" role="dialog">
@@ -106,10 +142,11 @@
  
        </div>
      </div>
+    </section>
 
     <section>
       <h2 class="leafbar">Find Other Useful Resources Below </h2>
-    </section>
+   
 
     <!-- <div class="row">
     <div class="col-2 "><img class="img-thumbnail img-fluid" src="./assets/images/leaf200X200.jpg" alt="">
@@ -187,7 +224,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
+  </section>
+    <!-- =========================================================================== -->
 
     <script type="text/javascript" src="js/members.js"></script>
 
