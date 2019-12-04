@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes){
     var calendar = sequelize.define('calendar', {
         month: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false
         },
         day: {
@@ -19,11 +19,11 @@ module.exports = function(sequelize, DataTypes){
             allowNull: false
         },
         min: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false
         },
         ampm: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false
         },
         event: {
