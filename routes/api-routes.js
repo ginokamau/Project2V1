@@ -54,7 +54,15 @@ app.get("/api/event_data", function(req, res) {
   db.calendar.findAll({
     where: {
       UserId: res.req.user.id
-    }
+    },
+    order: [
+      ['year', 'ASC'],
+      ['month', 'ASC'],
+      ['day', 'ASC'],
+      ['hour', 'DESC'],
+      ['min', 'DESC'],
+      ['ampm', 'DESC']
+    ]
     // include: [{
     //   model: db.User,
     //   required: true
