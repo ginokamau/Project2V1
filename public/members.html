@@ -12,14 +12,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<!-- <div class="btn-toolbar">
-  <div class="btn-group">
-    ...
-  </div>
-</div> -->
 
-<body class="container">
-  <div class="navbar btn-toolbar btn-group">
+
+<body class="container"></body>
+<nav class="topbar">
+
+  <img src="./assets/images/boomSandLogosmall.png"></a>
+  <a href="signup.html" class="myButton">Sign Up</a>
+  <a href="login.html" class="myButton">Login</a>
+  <a href="calendar.html" class="myButton">Journal</a>
+
+</nav>
+<br>
+<br>
+
+<!-- <div class="navbar btn-toolbar btn-group">
     <a href="#" class="navbar-left"><img src="./assets/images/boomSandLogosmall.png"></a>
     <div class="navbar-inner">
       <ul class="nav nav-pills nav-stacked">
@@ -28,33 +35,35 @@
         <a href="/login" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login</a>
       </ul>
     </div>
-  </div>
+  </div> -->
 
 
-  <div class="jumbotron text-centerr">
-    <h1>Boomer Sandwich</h1>
-    <hr>
-    <p>Here we are, like the trees in autumn, stuck between summer and winter, full grown, well rooted, and about to
-      peak in color.
-    </p>
-    <p> We take care of the wild nature and riotous growth of summer in our children.
-    </p>
-    <p>We blaze the path forward, fallen leaves, broken branches, ice storms, all seen in the faces of our aging
-      parents.
-    </p>
-    <p>
-      Once the Baby Boomers, we are now the fall generation and everything falls to us.
-    </p>
-  </div>
+<div class="jumbotron text-centerr">
+  <h1>Boomer Sandwich</h1>
+  <hr>
+  <p>Here we are, like the trees in autumn, stuck between summer and winter, full grown, well rooted, and about to
+    peak in color.
+  </p>
+  <p> We take care of the wild nature and riotous growth of summer in our children.
+  </p>
+  <p>We blaze the path forward, fallen leaves, broken branches, ice storms, all seen in the faces of our aging
+    parents.
+  </p>
+  <p>
+    Once the Baby Boomers, we are now the fall generation and everything falls to us.
+  </p>
+</div>
 
-  <div>
-    <section>
-      <h2 class="leafbar"> Hey Booomer Sandwich people! Use a little help. Explore our website to find the resources you
-        need. </h2>
-    </section>
-    <hr>
-<!-- ====================================================================================== -->
-   <!-- Gino and Maria APIs -->
+<div>
+  <section>
+    <h2 class="leafbar"> Hey Booomer Sandwich people! Use a little help. Explore our website to find the resources you
+      need. </h2>
+  </section>
+  <br>
+  <br>
+  <hr>
+  <!-- ====================================================================================== -->
+  <!-- Gino and Maria APIs -->
   <section>
     <div class="row">
 
@@ -66,7 +75,8 @@
 
         <!-- Medical services modal selection and zipCode input -->
         <div id="servicesModal">
-          <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal">
+          <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal"
+            aria-hidden="true" id="bannerformmodal">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-content">
@@ -78,20 +88,25 @@
                   <div class="modal-body">
                     <h5>What kind of specialist are you seeking? Make your selection below.</h5><br>
                     <div id="serviceSpecialist">
-                        <button type="button" class="specialist btn btn-danger btn-block btn-lg" value="Doctor">Doctor</button><br>
-                        <button type="button" class="specialist btn btn-primary btn-block btn-lg" value="Dentist">Dentist</button><br>
-                        <button type="button" class="specialist btn btn-success btn-block btn-lg" value="Drugstore">Drugstore</button>
+                      <button type="button" class="specialist btn btn-danger btn-block btn-lg"
+                        value="Doctor">Doctor</button><br>
+                      <button type="button" class="specialist btn btn-primary btn-block btn-lg"
+                        value="Dentist">Dentist</button><br>
+                      <button type="button" class="specialist btn btn-success btn-block btn-lg"
+                        value="Drugstore">Drugstore</button>
                     </div><br>
                     <div class="input-group input-group-lg">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text" id="">
-                            <input type="text" name="zipCode" id="zip" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">Search by Zip Code</span>
-                        </div>
-                        <!-- <input type="text" > -->
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="">
+                          <input type="text" name="zipCode" id="zip" class="form-control"
+                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">Search by Zip
+                          Code</span>
+                      </div>
+                      <!-- <input type="text" > -->
                     </div>
 
                   </div>
-                  <div class="modal-footer">                  
+                  <div class="modal-footer">
 
                     <button type="button" class="btn btn-secondary btn-lg">Submit</button>
                   </div>
@@ -101,7 +116,7 @@
           </div>
         </div>
 
-      </div>    
+      </div>
 
       <!-- Recipe suggestion link to modal -->
       <div class="col-sm-4">
@@ -110,88 +125,97 @@
           recipes made with ingredients you have on hand.</p>
 
         <!-- Recipe modal with ingredient inputs -->
-          <div id="recipesModal">
-            <div class="modal fade bannerformmodal1" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal1" aria-hidden="true" id="bannerformmodal1">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h4 class="modal-title" id="myModalLabel">Find a Recipe</h4>
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                      <form id="requestacallform" method="POST" name="requestacallform">          
-                        <div class="form-group">
-                          <div class="input-group">                               
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input id="ingredient1" type="text" class="form-control" placeholder="First ingredient" name="ingredient1" value="ingredient1"/>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="input-group">                               
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input id="ingredient2" type="text" class="form-control" placeholder="Second ingredient" name="ingredient2" value="ingredient2"/>
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <div class="input-group">                               
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input id="ingredient3" type="text" class="form-control" placeholder="Third ingredient" name="ingredient3" value="ingredient3"/>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary btn-lg">Submit</button>
-                    </div>          
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-      <!-- Ailment diagnosis link to modal -->
-      <div class="col-sm-4">
-        <h3>What's wrong with me?</h3>
-        <p>Go <a href="#bannerformodal2" data-toggle="modal" data-target="#bannerformmodal2">here</a>, type in your symptons and find out what may be ailing you.</p>    
-
-        <!-- Ailment diagnosis modal with symptom inputs -->
-        <div id="ailmentModal">
-          <div class="modal fade bannerformmodal2" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal" aria-hidden="true" id="bannerformmodal2">
+        <div id="recipesModal">
+          <div class="modal fade bannerformmodal1" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal1"
+            aria-hidden="true" id="bannerformmodal1">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-content">
-                  <div class="modal-header">                      
-                    <h4 class="modal-title" id="myModalLabel">Find your Diagnosis</h4>
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Find a Recipe</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                   </div>
                   <div class="modal-body">
-                    <form id="requestacallform" method="POST" name="requestacallform">          
+                    <form id="requestacallform" method="POST" name="requestacallform">
                       <div class="form-group">
-                        <div class="input-group">                               
+                        <div class="input-group">
                           <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                          <input id="ingredient1" type="text" class="form-control" placeholder="Symptom 1" name="symptom1" value="symptom1"/>
+                          <input id="ingredient1" type="text" class="form-control" placeholder="First ingredient"
+                            name="ingredient1" value="ingredient1" />
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="input-group">                               
+                        <div class="input-group">
                           <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                          <input id="ingredient2" type="text" class="form-control" placeholder="Symptom 2" name="symptom2" value="symptom2"/>
+                          <input id="ingredient2" type="text" class="form-control" placeholder="Second ingredient"
+                            name="ingredient2" value="ingredient2" />
                         </div>
                       </div>
                       <div class="form-group">
-                        <div class="input-group">                               
+                        <div class="input-group">
                           <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                          <input id="ingredient3" type="text" class="form-control" placeholder="Symptom 3" name="symptom3" value="symptom3"/>
+                          <input id="ingredient3" type="text" class="form-control" placeholder="Third ingredient"
+                            name="ingredient3" value="ingredient3" />
                         </div>
                       </div>
                     </form>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btn-lg">Submit</button>
-                  </div>         
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Ailment diagnosis link to modal -->
+      <div class="col-sm-4">
+        <h3>What's wrong with me?</h3>
+        <p>Go <a href="#bannerformodal2" data-toggle="modal" data-target="#bannerformmodal2">here</a>, type in your
+          symptons and find out what may be ailing you.</p>
+
+        <!-- Ailment diagnosis modal with symptom inputs -->
+        <div id="ailmentModal">
+          <div class="modal fade bannerformmodal2" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal"
+            aria-hidden="true" id="bannerformmodal2">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Find your Diagnosis</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <form id="requestacallform" method="POST" name="requestacallform">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                          <input id="ingredient1" type="text" class="form-control" placeholder="Symptom 1"
+                            name="symptom1" value="symptom1" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                          <input id="ingredient2" type="text" class="form-control" placeholder="Symptom 2"
+                            name="symptom2" value="symptom2" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                          <input id="ingredient3" type="text" class="form-control" placeholder="Symptom 3"
+                            name="symptom3" value="symptom3" />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-lg">Submit</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -212,8 +236,8 @@
             <img class="img-thumbnail img-fluid" src="./assets/images/ronWear.JPG" alt="">
 
             <p class="card-text">Keeping CHEMOTHERAPY, DIALYSIS & INFUSION Patients Warm, Modest & Comfortable
-                in Cold Treatment Rooms.<br><br>
-                Stylish Apparel with Zippered Openings for Ports</p>
+              in Cold Treatment Rooms.<br><br>
+              Stylish Apparel with Zippered Openings for Ports</p>
             <a href="https;//www.ronwear.com/" class="btn btn-primary">Shop now!</a>
           </div>
         </div>
@@ -224,8 +248,10 @@
           <div class="card-body">
             <img class="img-thumbnail img-fluid" src="./assets/images/hospice.jpg" alt="">
 
-            <p class="card-text">For 40 years, Hospice of the Western Reserve has provided palliative and end-of-life care, caregiver support, and bereavement services throughout Northern Ohio.
-                Our services have grown to meet the requirements of a diverse 11 county area. As your needs change, our staff and services respond with customized care.</p>
+            <p class="card-text">For 40 years, Hospice of the Western Reserve has provided palliative and end-of-life
+              care, caregiver support, and bereavement services throughout Northern Ohio.
+              Our services have grown to meet the requirements of a diverse 11 county area. As your needs change, our
+              staff and services respond with customized care.</p>
             <a href="https://www.hospicewr.org/" class="btn btn-primary">Explore now!</a>
           </div>
         </div>
@@ -236,7 +262,11 @@
           <div class="card-body">
             <img class="img-thumbnail img-fluid" src="./assets/images/eldercarematters-logo.png" alt="">
 
-            <p class="card-text">ElderCareMatters.com is a FREE National Directory of Elder Care / Senior Care Resources for families. In this Directory you will find thousands of Local Elder Care / Senior Care Experts. These Elder Care / Senior Care Professionals can help you plan for and deal with a wide range of Elder Care / Senior Care Services, including Elder Law, Estate Planning, Home Care, Medicaid Planning, Geriatric Care Management, Medicare Planning, Veterans Benefits, Probate, Senior Living, etc.</p>
+            <p class="card-text">ElderCareMatters.com is a FREE National Directory of Elder Care / Senior Care Resources
+              for families. In this Directory you will find thousands of Local Elder Care / Senior Care Experts. These
+              Elder Care / Senior Care Professionals can help you plan for and deal with a wide range of Elder Care /
+              Senior Care Services, including Elder Law, Estate Planning, Home Care, Medicaid Planning, Geriatric Care
+              Management, Medicare Planning, Veterans Benefits, Probate, Senior Living, etc.</p>
             <a href="https://eldercarematters.com/" class="btn btn-primary">Explore now!</a>
           </div>
         </div>
@@ -247,18 +277,21 @@
           <div class="card-body">
             <img class="img-thumbnail img-fluid" src="./assets/images/nls-loc-logo.jpg" alt="">
 
-            <p class="card-text">The resources listed in this reference guide are designed to assist adults over the age of 55 with disabilities, as well as their caregivers, in handling new physical, psychological, and financial challenges.</p>
-            <a href="https://www.loc.gov/nls/resources/general-resources-on-disabilities/resources-senior-citizens-families/" class="btn btn-primary">Explore now!</a>
+            <p class="card-text">The resources listed in this reference guide are designed to assist adults over the age
+              of 55 with disabilities, as well as their caregivers, in handling new physical, psychological, and
+              financial challenges.</p>
+            <a href="https://www.loc.gov/nls/resources/general-resources-on-disabilities/resources-senior-citizens-families/"
+              class="btn btn-primary">Explore now!</a>
           </div>
         </div>
       </div>
 
     </div>
   </section>
-    <!-- =========================================================================== -->
+  <!-- =========================================================================== -->
 
-    <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
 
-</body>
+  </body>
 
 </html>
