@@ -8,16 +8,48 @@ form.login {
 
 body {
   background-image: url("../images/aaron-burden-tb4wis6XoQk-unsplash.jpg");
-  background-color: rgb(233, 224, 224)
+  background-color: rgb(182, 164, 154)
 }
 
 
-.navbar,
-.nav-pills {
-  background-color: rgb(46, 20, 20);
-  color: rgb(180, 178, 178);
+.topbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: #480b19;
+  height: 120px;
+
 }
 
+
+.myButton {
+  float: right;
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #cd704e 5%, #c14343 100%);
+  /* background-color: #3b2523; */
+  border-radius: 6px;
+  border: 1px solid #3b130f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+
+.myButton:hover {
+  color: wheat;
+  background: linear-gradient(to bottom, #a78282 5%, #520101 100%);
+  background-color: #645555;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
 
 
 .jumbotron {
@@ -33,50 +65,15 @@ h2 {
   color: rgb(210, 200, 200);
 }
 
-/* section {
+section {
   height: 100px;
-  background-image: url("../images/download-4.jpg");
+  /* background-image: url("../images/download-4.jpg"); */
   background-blend-mode: lighten;
   text-align: center;
-} */
+}
 
 .leafbar {
   text-align: center;
   line-height: 100px;
   color: white;
 }
-
-/* " 
-johannes-plenio-RwHv7LgeC7s-unsplash.jpg
-annie-spratt-W6RXSc8OWN0-unsplash.jpg
-aaron-burden-tb4wis6XoQk-unsplash.jpg
- */
-
-/* a:link {
-  color: blue;
-}
-
-/* Unvisited links
-a:visited {
-  color: purple;
-}
-
-/* Visited links */
-/* a:hover {
-  background: yellow;
-} */
-
-/* Hovered links */
-/* a:active {
-  color: red; */
-/* } */
-
-
-/* Active links */
-
-/* p:active {
-  background: #eee;
-} */
-
-
-/* Active paragraphs */
