@@ -57,128 +57,127 @@
 
 
 
-<div>
-
-  <hr>
-  <!-- =================================================================================== -->
-  <!-- Gino and Maria API modals and links -->
-  <!-- Middle Section -->
-  <section>
-    <div class="row">
-
-      <!-- Medical services link to modal -->
-      <div class="col-sm-4">
-        <h3>Where's that office?</h3>
-        <p>Search <a href="#bannerformmodal" data-toggle="modal" data-target="#bannerformmodal">here</a> for a doctor,
-          dentist or drugstore near you.</p>
-
-        <!-- Medical services modal selection and zipCode input -->
-        <div id="servicesModal">
-          <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal"
-            aria-hidden="true" id="bannerformmodal">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
-                    <h3 class="modal-title" id="myModalLabel">Find a Service</h3>
-                    <button type="button" class="close" id='closer1' data-dismiss="modal">&times;</button>
 
 
+<hr>
+<!-- =================================================================================== -->
+<!-- Gino and Maria API modals and links -->
+<!-- Middle Section -->
+<section>
+  <div class="row">
+
+
+
+    <!-- Medical services link to modal -->
+    <div class="col-sm-4">
+      <h3>Where's that office?</h3>
+      <p>Search <a href="#bannerformmodal" data-toggle="modal" data-target="#bannerformmodal">here</a> for a doctor,
+        dentist or drugstore near you.</p>
+
+      <!-- Medical services modal selection and zipCode input -->
+      <div id="servicesModal">
+        <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal"
+          aria-hidden="true" id="bannerformmodal">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-content"> 
+
+
+              <div class="modal-header">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button> -->
+                <h3 class="modal-title" id="myModalLabel">Find a Service</h3>
+                <button type="button" class="close" id='closer1' data-dismiss="modal">&times;</button>
+              </div>
+
+              <div class="modal-body">
+                <h5>Enter your zip code.</h5>
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="">
+                      <input type="text" name="zipCode" id="zip" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-lg">Search by Zip
+                      Code</span>
                   </div>
-                  <div class="modal-body">
-                    <h5>Enter your zip code.</h5>
-                    <div class="input-group input-group-lg">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="">
-                          <input type="text" name="zipCode" id="zip" class="form-control"
-                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"> Search by Zip
-                          Code</span>
+                </div>
+
+                <h5>What kind of specialist are you seeking? Make your selection below.</h5><br>
+                <div id="serviceSpecialist">
+                  <button type="button" class="specialist btn btn-danger btn-block btn-lg" id="doctor"
+                    value="Doctor">Doctor</button><br>
+                  <button type="button" class="specialist btn btn-primary btn-block btn-lg" id="dentist"
+                    value="Dentist">Dentist</button><br>
+                  <button type="button" class="specialist btn btn-success btn-block btn-lg" id="drugstore"
+                    value="Drugstore">Drugstore</button>
+                </div><br>
+              </div>
+
+              <div class="modal-footer">
+                <!-- append result data to modal -->
+                <div class="servicesResults"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <!-- Recipe suggestion link to modal -->
+    <div class="col-sm-4">
+      <h3>What can I cook tonight?</h3>
+      <p>Follow this <a href="#bannerformmodal1" data-toggle="modal" data-target="#bannerformmodal1">link</a> to
+        find
+        recipes made with ingredients you have on hand.</p>
+
+      <!-- Recipe modal with ingredient inputs -->
+      <div id="recipesModal">
+        <div class="modal fade bannerformmodal1" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal1"
+          aria-hidden="true" id="bannerformmodal1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Find a Recipe</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                  <form id="requestacallform" method="POST" name="requestacallform">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input id="ingredient1" type="text" class="form-control" placeholder="First ingredient"
+                          name="ingredient1" value="ingredient1" />
                       </div>
                     </div>
-                    <h5>What kind of specialist are you seeking? Make your selection below.</h5><br>
-                    <div id="serviceSpecialist">
-                      <button type="button" class="specialist btn btn-danger btn-block btn-lg" id="doctor"
-                        value="Doctor">Doctor</button><br>
-                      <button type="button" class="specialist btn btn-primary btn-block btn-lg" id="dentist"
-                        value="Dentist">Dentist</button><br>
-                      <button type="button" class="specialist btn btn-success btn-block btn-lg" id="drugstore"
-                        value="Drugstore">Drugstore</button>
-                    </div><br>
-
-
-
-                  </div>
-                  <div class="modal-footer">
-                    <!-- append result data to modal -->
-                    <div class="servicesResults"></div>
-
-
-
-                  </div>
-
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input id="ingredient2" type="text" class="form-control" placeholder="Second ingredient"
+                          name="ingredient2" value="ingredient2" />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input id="ingredient3" type="text" class="form-control" placeholder="Third ingredient"
+                          name="ingredient3" value="ingredient3" />
+                      </div>
+                    </div>
+                  </form>
                 </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary btn-lg">Submit</button>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
-
-      <!-- Recipe suggestion link to modal -->
-      <div class="col-sm-4">
-        <h3>What can I cook tonight?</h3>
-        <p>Follow this <a href="#bannerformmodal1" data-toggle="modal" data-target="#bannerformmodal1">link</a> to find
-          recipes made with ingredients you have on hand.</p>
-
-        <!-- Recipe modal with ingredient inputs -->
-        <div id="recipesModal">
-          <div class="modal fade bannerformmodal1" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal1"
-            aria-hidden="true" id="bannerformmodal1">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Find a Recipe</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  </div>
-                  <div class="modal-body">
-                    <form id="requestacallform" method="POST" name="requestacallform">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                          <input id="ingredient1" type="text" class="form-control" placeholder="First ingredient"
-                            name="ingredient1" value="ingredient1" />
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                          <input id="ingredient2" type="text" class="form-control" placeholder="Second ingredient"
-                            name="ingredient2" value="ingredient2" />
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                          <input id="ingredient3" type="text" class="form-control" placeholder="Third ingredient"
-                            name="ingredient3" value="ingredient3" />
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-lg">Submit</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
     </div>
 
 
@@ -234,8 +233,6 @@
         </div>
       </div>
     </div>
-
-</div>
 </section>
 
 <br>
@@ -257,11 +254,10 @@
         <div class="card-body d-flex flex-column">
           <img class="img-thumbnail img-fluid" src="./assets/images/ronWear.JPG" alt="">
 
-          <p class="card-text">Keeping CHEMOTHERAPY, DIALYSIS & INFUSION Patients Warm, Modest & Comfortable
-
-            in Cold Treatment Rooms.<br><br>
+          <p class="card-text">Keeping CHEMOTHERAPY, DIALYSIS & INFUSION Patients Warm, Modest & Comfortablein Cold
+            Treatment Rooms.<br><br>
             Stylish Apparel with Zippered Openings for Ports</p>
-          <a href="https;//www.ronwear.com/" class="myButton">Shop now!</a>
+          <a href="https://www.ronwear.com//" class="myButton" target="_blank">Shop now!</a>
 
 
         </div>
@@ -274,15 +270,11 @@
           <img class="img-thumbnail img-fluid" src="./assets/images/hospice.jpg" alt="">
 
           <p class="card-text">For 40 years, Hospice of the Western Reserve has provided palliative and
-            end-of-life
-            care, caregiver support, and bereavement services throughout Northern Ohio.
-            Our services have grown to meet the requirements of a diverse 11 county area. As your needs change, our
-            staff and services respond with customized care.</p>
-          <a href="https://www.hospicewr.org/" class="myButton">Explore now!</a>
+            end-of-lifecare, caregiver support, and bereavement services throughout Northern Ohio.
+            <!-- Our services have grown to meet the requirements of a diverse 11 county area. As your needs change, our
+            staff and services respond with customized care.</p> -->
 
-          <p class="card-text">Hospice of the Western Reserve has provided palliative and end-of-life care, caregiver
-            support, and bereavement services throughout Northern Ohio.</p>
-
+            <a href="https://www.hospicewr.org/" class="myButton" target="_blank">Explore now!</a>
 
 
         </div>
@@ -292,7 +284,7 @@
       <!-- <div class="col-sm-3"> -->
       <div class="card">
         <div class="card-body d-flex flex-column">
-          <img class="img-thumbnail img-fluid" src="./assets/images/eldercarematters-logo.png" alt="">
+          <img class="img-thumbnail img-fluid" src="./assets/images/eldercarelogo.png" alt="">
 
           <p class="card-text">ElderCareMatters.com is a FREE National Directory of Elder Care / Senior Care Resources
             for families.</p>
@@ -309,15 +301,74 @@
           <img class="img-thumbnail img-fluid" src="./assets/images/nls-loc-logo.jpg" alt="">
 
           <p class="card-text">The resources listed in this reference guide are designed to assist adults
-            over the age
-            of 55 with disabilities, as well as their caregivers, in handling new physical, psychological, and
+            over the ageof 55 with disabilities, as well as their caregivers, in handling new physical, psychological,
+            and
             financial challenges.</p>
           <a href="https://www.loc.gov/nls/resources/general-resources-on-disabilities/resources-senior-citizens-families/"
-            class="myButton">Explore now!</a>
+            class="myButton" target="_blank">Explore now!</a>
 
         </div>
       </div>
     </div>
+
+    <br>
+    <hr><br>
+    <!-- Added second layer of cards -->
+    <div class="card-deck">
+      <!-- <div class="col-sm-3"> -->
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="img-thumbnail img-fluid" src="./assets/images/ioaLogo.jpg" alt="">
+
+          <p class="card-text">Tips and trick to keep you connected with your loved ones through technology!.
+          </p>
+          <a href="https://www.ioaging.org/the-2018-guide-to-best-technology-resources-and-tools-for-seniors"
+            class="myButton" target="_blank">Shop now!</a>
+
+
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- <div class="col-sm-3"> -->
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="img-thumbnail img-fluid" src="./assets/images//DHHS.jpg" alt="">
+
+          <p class="card-text">U.S. Department of Health and Human Services</p>
+
+          <a href="https://www.nia.nih.gov//" class="myButton" target="_blank">Explore now!</a>
+
+
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- <div class="col-sm-3"> -->
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="img-thumbnail img-fluid" src="./assets/images/caringLogo.jpg" alt="">
+
+          <p class="card-text">How to use Pinterest!</p>
+          <a href="https://www.caringseniorservice.com/blog/the-ultimate-guide-to-pinterest-for-seniors/"
+            class="myButton" target="_blank">Explore
+            now!</a>
+        </div>
+      </div>
+      <!-- </div> -->
+
+      <!-- <div class="col-sm-3"> -->
+      <div class="card">
+        <div class="card-body d-flex flex-column">
+          <img class="img-thumbnail img-fluid" src="./assets/images/CWRU.jpg" alt="">
+
+          <p class="card-text">Great opportunity to develop new skills at any age!</p>
+          <a href="https://bootcamp.case.edu/coding//" class="myButton" target="_blank">Explore now!</a>
+
+        </div>
+      </div>
+    </div>
+
   </div>
 
 
