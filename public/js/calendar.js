@@ -89,9 +89,9 @@ $(document).ready(function () {
       // on success, rewrite entry listing, reset form and clear event entry box
       .then(function () {
         showAll();
+        $('form').get(0).reset();
+        $("#event").val("");
       });
-    $('form').get(0).reset();
-    $("#event").val("");
   });
 
   // deletes an event when the user clicks the delete button
