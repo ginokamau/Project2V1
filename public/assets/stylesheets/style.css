@@ -51,6 +51,59 @@ body {
   top: 1px;
 }
 
+.myButton2 {
+  float: right;
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #97adce 5%, #4533be 100%);
+  /* background-color: #3b2523; */
+  border-radius: 6px;
+  border: 1px solid #3b130f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+
+.myButton3 {
+  float: right;
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: linear-gradient(to bottom, #9dc98a 5%, #166e24 100%);
+  /* background-color: #3b2523; */
+  border-radius: 6px;
+  border: 1px solid #3b130f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+
+.myModal {
+  border-radius: 4%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3c603b+0,e8fcab+100 */
+  background: #3c603b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #3c603b 0%, #e8fcab 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3c603b 0%, #e8fcab 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3c603b 0%, #e8fcab 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c603b', endColorstr='#e8fcab', GradientType=0);
+  /* IE6-9 */
+
+  /* background-color: #9eb395 */
+}
+
 
 .jumbotron {
   background-image: url("../images/annie-spratt-W6RXSc8OWN0-unsplash.jpg");
@@ -75,5 +128,9 @@ section {
 .leafbar {
   text-align: center;
   line-height: 100px;
+  color: white;
+}
+
+.notBlueLink {
   color: white;
 }

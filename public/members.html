@@ -20,7 +20,7 @@
   <img src="./assets/images/boomSandLogosmall.png"></a>
   <a href="/signup" class="myButton">Sign Up</a>
   <a href="/login" class="myButton">Login</a>
-  <a href="/calendar" class="myButton">Journal</a>
+  <!-- <a href="/calendar" class="myButton">Journal</a> -->
 
 </nav>
 <br>
@@ -45,8 +45,8 @@
 
 <div>
   <section>
-    <h3 class="leafbar"> Hey Booomer Sandwich people! Use a little help.</h3>
-    <h3 class="leafbar"> Explore our website to find the resources you
+    <h3 class="leafbar"> Hey Booomer Sandwich people! Use a little help.<br>
+      Explore our website to find the resources you
       need. </h3>
   </section>
   <br>
@@ -68,15 +68,16 @@
     <!-- Medical services link to modal -->
     <div class="col-sm-12 text-center">
       <h3>Where's that office?</h3>
-      <p>Search <a href="#bannerformmodal" data-toggle="modal" data-target="#bannerformmodal">here</a> for a doctor,
-        dentist or drugstore near you.</p>
+      <h4>Search <a href="#bannerformmodal" data-toggle="modal" data-target="#bannerformmodal"
+          class="notBlueLink">here</a> for a doctor,
+        dentist or drugstore near you.</h4>
 
       <!-- Medical services modal selection and zipCode input -->
       <div id="servicesModal">
-        <div class="modal fade bannerformmodal" tabindex="-1" role="dialog" aria-labelledby="bannerformmodal"
+        <div class="modal fade bannerformmodal tabindex=" -1" role="dialog" aria-labelledby="bannerformmodal"
           aria-hidden="true" id="bannerformmodal">
           <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content myModal">
               <!-- <div class="modal-content"> -->
 
               <div class="modal-header">
@@ -98,11 +99,11 @@
 
                 <h5>What kind of specialist are you seeking? Make your selection below.</h5><br>
                 <div id="serviceSpecialist">
-                  <button type="button" class="specialist btn btn-danger btn-block btn-lg" id="doctor"
+                  <button type="button" class="specialist btn  btn-block btn-lg myButton" id="doctor"
                     value="Doctor">Doctor</button><br>
-                  <button type="button" class="specialist btn btn-primary btn-block btn-lg" id="dentist"
+                  <button type="button" class="specialist btn  btn-block btn-lg myButton2" id="dentist"
                     value="Dentist">Dentist</button><br>
-                  <button type="button" class="specialist btn btn-success btn-block btn-lg" id="drugstore"
+                  <button type="button" class="specialist btn  btn-block btn-lg myButton3" id="drugstore"
                     value="Drugstore">Drugstore</button>
                 </div><br>
               </div>
