@@ -233,9 +233,7 @@ section {
   background-color: rgb(38, 90, 168);
 }
 
-aside {
-  float: right;
-}
+
 
 /* @media only screen and (max-device-width: 480px) {
   div#wrapper {

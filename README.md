@@ -83,9 +83,12 @@
 
 #### Instructions for the use of the journal are given at the top of the page. The user must enter all date/time information and an event. Can edit event or delete. The messages are displayed so that the most recent (in terms of the date/time information entered by the user) is on top. Can log out or go to members page.
 
-![picture](/public/assets/images/journal_2.png)
+![picture](/public/assets/images/sequelizeDB.png)
 
 #### The user is logged out when the 'Log Off' link is clicked or the browser session is ended.
+
+#### Data is stored on the local machine using mySQL database
+![picture](/public/assets/images/journal_2.png)
 
 #### Node.js and express were used as our server and page presentation technology. Express-session was also used to store session information using a cookie on the client side. Passport and passport local were used for login and password handling. The bcrypt module was used to hash and salt the passord before storing it in the database. The database technologies used were mysql and sequelize. Local database protection utilized 'dotenv' and a .env file. The database was utilized to store user login and password information and to store entries and date time information from the user's personal journal. The code was uploaded to github and deployed on Heroku. A connection between Heroku and the local machine storage was accomplished by provisioning JAWSDB in Heroku and creating a mysqul
 
