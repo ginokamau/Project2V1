@@ -36,7 +36,7 @@ $(document).ready(function () {
         // if error, log the error
       })
       .catch(function (err) {
-        alert('Invalid email/password combination.')
+        alert('Invalid email/password combination.');
         console.log(err);
       });
   }
