@@ -167,7 +167,7 @@ section {
   width: 138px;
   margin: 2px;
   display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 .entry-social a {
@@ -231,4 +231,59 @@ section {
 
 .entry-social .delicious a:hover {
   background-color: rgb(38, 90, 168);
+}
+
+
+
+/* @media only screen and (max-device-width: 480px) {
+  div#wrapper {
+    width: 400px;
+  }
+
+  div#header {
+    background-image: url(media-queries-phone.jpg);
+    height: 93px;
+    position: relative;
+  }
+
+  div#header h1 {
+    font-size: 140%;
+  }
+
+  #content {
+    float: none;
+    width: 100%;
+  }
+
+  #navigation {
+    float: none;
+    width: auto;
+  }
+} */
+@media only screen and (max-width: 480px),
+only screen and (max-device-width: 480px) {
+  div#wrapper {
+    width: 400px;
+  }
+
+  div#header {
+    background-image: url(media-queries-phone.jpg);
+    height: 93px;
+    position: relative;
+  }
+
+  div#header h1 {
+    font-size: 140%;
+  }
+
+  #content {
+    float: none;
+    width: 100%;
+  }
+
+  #navigation {
+    float: none;
+    width: auto;
+  }
+
 }
