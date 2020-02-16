@@ -31,7 +31,7 @@ $(document).ready(function () {
         
         
         $(".servicesResults").append(i + " Business Name:     " + Results.businesses[i].name);
-        $(".servicesResults").append("<br />Business Address:     " + Results.businesses[i].address1);
+        $(".servicesResults").append("<br />Business Address:     " + Results.businesses[i].location.address1);
         $(".servicesResults").append("<br />Business City:     " + Results.businesses[i].location.city);
         $(".servicesResults").append("<br />Business ZipCode:     " + Results.businesses[i].location.zip_code);
         $(".servicesResults").append("<br />Business Phone:     " + Results.businesses[i].phone);
@@ -72,7 +72,7 @@ $(document).ready(function () {
         
         
         $(".servicesResults").append(i + " Business Name:     " + Results.businesses[i].name);
-        $(".servicesResults").append("<br />Business Address:     " + Results.businesses[i].address1);
+        $(".servicesResults").append("<br />Business Address:     " + Results.businesses[i].location.address1);
         $(".servicesResults").append("<br />Business City:     " + Results.businesses[i].location.city);
         $(".servicesResults").append("<br />Business ZipCode:     " + Results.businesses[i].location.zip_code);
         $(".servicesResults").append("<br />Business Phone:     " + Results.businesses[i].phone);
@@ -115,7 +115,7 @@ $(document).ready(function () {
         
         
         $(".servicesResults").append(i + " Business Name:     " + Results.businesses[i].name);
-        $(".servicesResults").append("<br />Business Address:     " + Results.businesses[i].address1);
+        $(".servicesResults").append("<br />Business Address:     " + Results.businesses[i].location.address1);
         $(".servicesResults").append("<br />Business City:     " + Results.businesses[i].location.city);
         $(".servicesResults").append("<br />Business ZipCode:     " + Results.businesses[i].location.zip_code);
         $(".servicesResults").append("<br />Business Phone:     " + Results.businesses[i].phone);
